@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap"rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="my-0 mx-0 py-0 px-0 box-border font-sans">
+        <div class="bg-blue-900 w-full h-screen flex items-center justify-center">
+            <form onsubmit="sendEmail(); reset(); return false;" class="bg-gray-100 flex flex-col px-16 py-10 rounded-xl w-5/12 ">
+                <h3 class="text-gray-700 font-extrabold mb-5 text-xl">GET IN TOUCH</h3>
+                <input class="border-black p-4 my-2 mx-2.5 outline-none bg-slate-200 text-base rounded-lg" type="text" id="name" placeholder="Your Name" required>
+                <input class="border-black p-4 my-2 mx-2.5 outline-none bg-slate-200 text-base rounded-lg " type="email" id="email" placeholder="Email id" required>
+                <input class="border-black p-4 my-2 mx-2.5 outline-none bg-slate-200 text-base rounded-lg " type="text" id="phone" placeholder="Phone no." required>
+                <textarea class="border-black p-4 my-3 mx-2.5 outline-none bg-slate-200 text-base rounded-lg " id="message" rows="4" placeholder="How can we help you?" ></textarea>
+                <button class="p-3.5 text-xl outline-none bg-green-800 text-white rounded-md cursor-pointer hover:bg-green-500 " type="submit">Send</button>
+            </form>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="gmail.js"></script>
+    </body>
+</html>
